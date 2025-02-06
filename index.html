@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h2>Color Guessing Game</h2>
+    
+    <!-- This is where the target color will be displayed -->
+    <div id="colorBox" data-testid="colorBox"></div>
+
+    <!-- The instructions for the player -->
+    <p id="gameInstructions" data-testid="gameInstructions">Guess the correct color!</p>
+
+    <!-- This is where the player will pick their guess -->
+    <div id="colorOptions">
+      <button class="color-btn" id="btn1" data-testid="colorOption"></button>
+      <button class="color-btn" id="btn2" data-testid="colorOption"></button>
+      <button class="color-btn" id="btn3" data-testid="colorOption"></button>
+      <button class="color-btn" id="btn4" data-testid="colorOption"></button>
+      <button class="color-btn" id="btn5" data-testid="colorOption"></button>
+      <button class="color-btn" id="btn6" data-testid="colorOption"></button>
+    </div>
+
+    <!-- Status messages -->
+    <p id="gameStatus" data-testid="gameStatus"></p>
+
+    <!-- Display the score -->
+    <p id="score" data-testid="score">Score: 0</p>
+
+    <!-- Restart button -->
+    <button id="newGameButton" data-testid="newGameButton">Start New Game</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

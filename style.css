@@ -1,0 +1,110 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #eef2f3, #d6eaf8);
+}
+
+/* Main game container */
+.game-container {
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(180deg, #0a74da, #f7f7f8);
+  border-radius: 40px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.game-container:hover {
+  transform: translateY(-5px);
+}
+
+/* The target color box */
+#colorBox {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  border: 3px solid black;
+  background-color: white;
+  border-radius: 20px;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+#colorBox.correct {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(0, 255, 0, 0.7);
+}
+
+/* Arrange color options */
+#colorOptions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Buttons for colors */
+.color-btn {
+  width: 130px; /* Increase button size */
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure buttons have their assigned background colors */
+.color-btn:nth-child(1) { background-color: red; }
+.color-btn:nth-child(2) { background-color: blue; }
+.color-btn:nth-child(3) { background-color: green; }
+.color-btn:nth-child(4) { background-color: yellow; }
+.color-btn:nth-child(5) { background-color: purple; }
+.color-btn:nth-child(6) { background-color: orange; }
+
+.color-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+}
+
+/* Score and game status */
+#score, #gameStatus {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Restart button */
+#newGameButton {
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #28a745, #218838);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#newGameButton:hover {
+  background: linear-gradient(90deg, #218838, #1e7e34);
+  transform: scale(1.1);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
